@@ -22,7 +22,7 @@ opencv-python
 using requirements.txt file found in this repo)
 
 Running the prototype program:
-clone this repository
+clone this repository<br>
 `git clone https://github.com/AlliedToasters/OneClickCDA.git`<br>
 
 from OneClickCDA directory, run:<br>
@@ -32,7 +32,7 @@ from OneClickCDA directory, run:<br>
 `python3 deploy.py`<br>
 (depends on your system, but make sure you're using python 3.6)<br>
 
-Type in the path to an image (should be reasonably small, 2,000x2,000 px)<br>
+Type in the path to an image (should be reasonably small, 2,000x2,000 px or less)<br>
 
 Matplotlib should open a window on your system.<br>
 
