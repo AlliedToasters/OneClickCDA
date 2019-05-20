@@ -32,13 +32,13 @@ from OneClickCDA directory, run:\n
 `python3 deploy.py`\n
 (depends on your system, but make sure you're using python 3.6)\n
 
-Type in the path to an image (should be reasonably small, 2,000x2,000 px)
+Type in the path to an image (should be reasonably small, 2,000x2,000 px)\n
 
-Matplotlib should open a window on your system.
+Matplotlib should open a window on your system.\n
 
-Controls:
-`right click - switch proposal size`
-`left click - propose crater center`
-`u - undo previous detection`
+Controls:\n
+`right click - switch proposal size`\n
+`left click - propose crater center`\n
+`u - undo previous detection`\n
 
 Close the window, and the command line will ask you where to store your results. Enter a path to the desired filename.
