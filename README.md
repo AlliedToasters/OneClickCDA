@@ -17,28 +17,28 @@ numpy
 opencv-python
 ```
 
-(Hint: install libraries using pip:\n
-`pip install -r requirements.txt`\n
+(Hint: install libraries using pip:<br>
+`pip install -r requirements.txt`<br>
 using requirements.txt file found in this repo)
 
 Running the prototype program:
 clone this repository
-`git clone https://github.com/AlliedToasters/OneClickCDA.git`\n
+`git clone https://github.com/AlliedToasters/OneClickCDA.git`<br>
 
-from OneClickCDA directory, run:\n
+from OneClickCDA directory, run:<br>
 
-`python deploy.py`\n
--OR-\n
-`python3 deploy.py`\n
-(depends on your system, but make sure you're using python 3.6)\n
+`python deploy.py`<br>
+-OR-<br>
+`python3 deploy.py`<br>
+(depends on your system, but make sure you're using python 3.6)<br>
 
-Type in the path to an image (should be reasonably small, 2,000x2,000 px)\n
+Type in the path to an image (should be reasonably small, 2,000x2,000 px)<br>
 
-Matplotlib should open a window on your system.\n
+Matplotlib should open a window on your system.<br>
 
-Controls:\n
-`right click - switch proposal size`\n
-`left click - propose crater center`\n
-`u - undo previous detection`\n
+Controls:<br>
+`right click - switch proposal size`<br>
+`left click - propose crater center`<br>
+`u - undo previous detection`<br>
 
 Close the window, and the command line will ask you where to store your results. Enter a path to the desired filename.
