@@ -3,6 +3,7 @@
 This is a project to increase the productivity of crater annotators. Using convolutional neural networks, a model regresses the exact location of crater given a rough proposal.
 
 ![Alt Text](short_demo.gif)
+[high-resolution version of the demo video](https://youtu.be/a4d1GfKvgUs)
 
 *This project is still in the early prototype phase*
 
