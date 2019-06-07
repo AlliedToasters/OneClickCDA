@@ -26,9 +26,9 @@ class DetectionManager(object):
             self.results = pd.DataFrame(columns=['x', 'y', 'r', 'source'])
         cols = self.results.columns
         row = pd.DataFrame(columns=cols, index=[len(self.results)])
-        row['x'] = [x]
-        row['y'] = [y]
-        row['r'] = [r]
+        row['x'] = [round(x, 2)]
+        row['y'] = [round(y, 2)]
+        row['r'] = [round(r, 2)]
         row['source'] = source
         self.results = pd.concat([self.results, row], axis=0)
 
@@ -38,8 +38,11 @@ class DetectionManager(object):
         x, y, r = self.predictor.predict(prop_center, r, source, self.images)
         self.add_results(x, y, r, source)
 
-    def write_csv(self, path):
-        self.results.to_csv(path, index=False)
+    def write_csv(self, path, incl_source=False):
+        if incl_source:
+            self.results.to_csv(path, index=False)
+        else:
+            self.results[['x', 'y', 'r']].to_csv(path, index=False)
 
     def undo_result(self):
         if self.results is None:

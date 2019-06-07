@@ -47,6 +47,8 @@ def get_image(crater, clahe=True, absolute=False):
         name = crater.split('.')[0]
         path = './images/{}.png'.format(name)
     img = cv2.imread(path)
+    if img is None:
+        raise Exception('Image file not found.')
     img = standardize_image(img)
     if clahe:
         img = make_channels(img[:, :, 0])
