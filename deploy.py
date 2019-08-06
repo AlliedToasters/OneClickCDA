@@ -58,7 +58,7 @@ manager = None
 def onclick(event):
     global manager
     rs = [7, 15, 31, 50]
-    button = event.button
+    button = event.button.value
     if str(button) == '3':
         manager.current_r += 1
         if manager.current_r == 4:

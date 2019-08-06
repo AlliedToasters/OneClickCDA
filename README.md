@@ -13,8 +13,8 @@ Python version: `3.6`
 
 Libraries:
 ```
-torch
-matplotlib
+torch==1.0.0
+matplotlib==3.1.1
 pandas
 numpy
 opencv-python
